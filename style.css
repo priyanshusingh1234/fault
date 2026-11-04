@@ -1,0 +1,472 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f1e1;
+  color: #181926;
+  margin: 15px;
+  padding: 0;
+}
+
+.priyanshu-site-header {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.priyanshu-site-header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.priyanshu-site-box {
+  max-width: 860px;
+  height: 520px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 2px solid #181926;
+  box-shadow: 3px 3px 0px #181926;
+  display: flex;
+}
+
+.priyanshu-site-sidebar {
+  width: 250px;
+  background-color: #fffdf7;
+  border-right: 2px solid #181926;
+  overflow-y: auto;
+}
+
+.priyanshu-sidebar-title {
+  padding: 10px 12px;
+  border-bottom: 2px solid #181926;
+  background-color: #ffe066;
+}
+
+.priyanshu-sidebar-title h3 {
+  margin: 0;
+  font-size: 13px;
+}
+
+.priyanshu-contact-box {
+  display: flex;
+  align-items: center;
+  padding: 9px 12px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.priyanshu-contact-box:hover {
+  background-color: #faf0c8;
+}
+
+.priyanshu-contact-active {
+  background-color: #fff4cc;
+  border-left: 3px solid #181926;
+}
+
+.priyanshu-avatar {
+  width: 32px;
+  height: 32px;
+  background-color: #e2e2e2;
+  border: 1px solid #181926;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.priyanshu-yellow {
+  background-color: #ffd166;
+}
+
+.priyanshu-green {
+  background-color: #06d6a0;
+}
+
+.priyanshu-pink {
+  background-color: #f87171;
+  color: white;
+}
+
+.priyanshu-contact-text strong {
+  display: block;
+  font-size: 12px;
+}
+
+.priyanshu-contact-text p {
+  margin: 2px 0 0 0;
+  font-size: 11px;
+  color: #666;
+}
+
+.priyanshu-typing-txt {
+  color: #059669;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.priyanshu-chat-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #fbfbfa;
+}
+
+.priyanshu-site-nav {
+  padding: 8px 14px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #181926;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.priyanshu-site-nav h2 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.priyanshu-nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+}
+
+.priyanshu-btn {
+  background-color: #ffffff;
+  color: #181926;
+  border: 1px solid #181926;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 1px 1px 0px #181926;
+}
+
+.priyanshu-btn:hover {
+  background-color: #ffe066;
+}
+
+.priyanshu-call-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.priyanshu-call-click {
+  list-style: none;
+  user-select: none;
+}
+
+.priyanshu-call-click::-webkit-details-marker {
+  display: none;
+}
+
+.priyanshu-call-card {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 260px;
+  background-color: #ffffff;
+  border: 2px solid #181926;
+  box-shadow: 3px 3px 0px #181926;
+  border-radius: 6px;
+  padding: 10px 12px;
+  z-index: 100;
+  text-align: left;
+}
+
+.priyanshu-call-top {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-bottom: 1px solid #181926;
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: #181926;
+}
+
+.priyanshu-wait-text {
+  font-size: 12px;
+  color: #dc2626;
+  margin: 4px 0 6px 0;
+  background-color: #fee2e2;
+  padding: 4px 6px;
+  border-radius: 4px;
+  border: 1px dashed #ef4444;
+}
+
+.priyanshu-call-card small {
+  display: block;
+  font-size: 10px;
+  color: #666;
+  line-height: 1.35;
+}
+
+.priyanshu-bottom-call .priyanshu-bottom-popup {
+  top: auto;
+  bottom: calc(100% + 10px);
+  right: -30px;
+}
+
+.priyanshu-info-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.priyanshu-info-btn {
+  list-style: none;
+  user-select: none;
+}
+
+.priyanshu-info-btn::-webkit-details-marker {
+  display: none;
+}
+
+.priyanshu-user-card {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 270px;
+  background-color: #ffffff;
+  border: 2px solid #181926;
+  box-shadow: 3px 3px 0px #181926;
+  border-radius: 6px;
+  padding: 12px;
+  z-index: 100;
+  text-align: left;
+}
+
+.priyanshu-card-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #181926;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.priyanshu-card-avatar {
+  font-size: 18px;
+  width: 32px;
+  height: 32px;
+  background-color: #ffd166;
+  border: 1px solid #181926;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.priyanshu-card-top h4 {
+  margin: 0;
+  font-size: 13px;
+}
+
+.priyanshu-alias {
+  font-size: 10px;
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.priyanshu-card-stuff {
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.priyanshu-card-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.priyanshu-card-label {
+  color: #555;
+  font-size: 11px;
+}
+
+.priyanshu-acc-box {
+  background-color: #f3f4f6;
+  border: 1px solid #ccc;
+  padding: 1px 4px;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.priyanshu-party-box {
+  background-color: #fef08a;
+  border: 1px dashed #ca8a04;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.priyanshu-party-box strong {
+  font-size: 11px;
+  color: #854d0e;
+}
+
+.priyanshu-desc-box {
+  background-color: #fee2e2;
+  border: 1px solid #f87171;
+  padding: 6px;
+  border-radius: 4px;
+  color: #991b1b;
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.priyanshu-footer-tag {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #777;
+  border-top: 1px solid #eee;
+  padding-top: 4px;
+  margin-top: 2px;
+}
+
+.priyanshu-chat-messages {
+  flex: 1;
+  padding: 14px;
+  overflow-y: auto;
+  background-color: #f7f1e1;
+}
+
+.priyanshu-msg-left {
+  background-color: #ffffff;
+  border: 1px solid #181926;
+  box-shadow: 2px 2px 0px #181926;
+  padding: 8px 12px;
+  width: fit-content;
+  max-width: 65%;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.priyanshu-msg-right {
+  background-color: #dcf8c6;
+  border: 1px solid #181926;
+  box-shadow: 2px 2px 0px #181926;
+  padding: 8px 12px;
+  width: fit-content;
+  max-width: 65%;
+  margin-left: auto;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.priyanshu-msg-left p,
+.priyanshu-msg-right p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.priyanshu-time {
+  display: inline-block;
+  font-size: 10px;
+  color: #777;
+  margin-top: 4px;
+}
+
+.priyanshu-time-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.priyanshu-delete-box {
+  display: inline-block;
+  margin-top: 2px;
+}
+
+.priyanshu-delete-btn {
+  font-size: 10px;
+  color: #888;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.priyanshu-delete-btn::-webkit-details-marker {
+  display: none;
+}
+
+.priyanshu-delete-row:hover .priyanshu-delete-btn {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.priyanshu-delete-btn:hover {
+  text-decoration: underline;
+}
+
+.priyanshu-delete-error {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #ef4444;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 11px;
+  margin-top: 6px;
+  line-height: 1.35;
+  box-shadow: 1px 1px 0px #ef4444;
+}
+
+.priyanshu-input-form {
+  display: flex;
+  padding: 8px 10px;
+  background-color: #ffffff;
+  border-top: 2px solid #181926;
+  gap: 6px;
+}
+
+.priyanshu-input-form input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #181926;
+  font-size: 12px;
+  outline: none;
+}
+
+.priyanshu-input-form input:focus {
+  border-color: #181926;
+}
+
+.priyanshu-cam-btn {
+  background-color: #ffffff;
+  border: 1px solid #181926;
+  padding: 6px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 1px 1px 0px #181926;
+}
+
+.priyanshu-cam-btn:hover {
+  background-color: #fee2e2;
+}
+
+.priyanshu-send-btn {
+  background-color: #ffe066;
+  color: #181926;
+  border: 1px solid #181926;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 1px 1px 0px #181926;
+}
+
+.priyanshu-send-btn:hover {
+  background-color: #ffd633;
+}
